@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tilid_matkul">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Id Matakuliah"
+            android:id="@+id/inp_id_matkul"
+            android:inputType="number"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tilmatkul">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Matakuliah"
+            android:id="@+id/inp_matkul"
+            android:inputType="textPersonName"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tilprodi_matkul">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Program Studi Matakuliah"
+            android:id="@+id/inp_prodi_matkul"
+            android:inputType="textPersonName"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tildosen_matkul">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Dosen Matakuliah"
+            android:id="@+id/inp_dosen_matkul"
+            android:inputType="textPersonName"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="?android:attr/borderlessButtonStyle"
+            android:drawableLeft="@drawable/ic_batal"
+            android:text="Batal"
+            android:id="@+id/btn_cancelMatkul"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="?android:attr/borderlessButtonStyle"
+            android:drawableLeft="@drawable/ic_save"
+            android:text="Simpan"
+            android:id="@+id/btn_simpanMatkul"/>
+    </LinearLayout>
+
+</LinearLayout>
